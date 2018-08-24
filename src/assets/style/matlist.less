@@ -1,0 +1,156 @@
+@import 'variable';
+
+.mat-list {
+  padding-top: 8px;
+  display: block;
+
+  .mat-subheader {
+    height: 48px;
+    line-height: 16px;
+    margin: 0;
+    color: @black-54;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    box-sizing: border-box;
+    padding: 16px;
+    align-items: center;
+
+    &:first-child {
+      margin-top: -8px;
+    }
+  }
+
+  .mat-list-item {
+    display: block;
+    height: 48px;
+    color: @black-87;
+    font-size: 16px;
+
+    &.mat-2-line {
+      height: 72px;
+
+      .mat-list-text .h3 {
+        font-weight: 400;
+      }
+
+      .mat-list-text .p {
+        display: block;
+        font-size: 14px;
+        font-weight: 500;
+        margin: 0;
+        color: @black-54;
+      }
+    }
+
+    &.mat-3-line {
+      height: 88px;
+
+      .mat-list-text .h3 {
+        font-weight: 400;
+      }
+
+      .mat-list-text .h4 {
+        display: block;
+        font-size: 14px;
+        font-weight: 400;
+        margin: 3px 0 1px;
+      }
+
+      .mat-list-text .p {
+        display: block;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.6em;
+        margin: 0;
+        color: @black-54;
+      }
+    }
+
+    &.mat-list-item-hover {
+      background-color: rgba(0, 0, 0, .12);
+    }
+
+    .mat-list-item-content {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      box-sizing: border-box;
+      padding: 0 16px;
+      position: relative;
+      height: inherit;
+    }
+
+    .mat-list-icon {
+      flex-shrink: 0;
+      width: 24px;
+      height: 24px;
+      font-size: 24px;
+      box-sizing: content-box;
+      border-radius: 50%;
+      padding: 4px;
+    }
+
+    .mat-list-avatar {
+      flex-shrink: 0;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
+
+    .mat-list-image {
+      flex-shrink: 0;
+      width: 64px;
+      height: 64px;
+      max-width: 64px;
+      max-height: 64px;
+    }
+
+    .mat-list-text {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      box-sizing: border-box;
+      overflow: hidden;
+      padding: 0 16px;
+
+      > view, > div {
+        margin: 0;
+        padding: 0;
+        font-weight: 400;
+        font-size: inherit;
+      }
+
+      .mat-line {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: block;
+        box-sizing: border-box;
+      }
+    }
+
+    .mat-secondary-container {
+      display: flex;
+      align-items: center;
+      flex-shrink: 0;
+      margin: auto 0 auto auto;
+
+      .mat-secondary {
+        min-height: 32px;
+        margin: 0 6px 0 0;
+        height: 40px;
+        min-width: 0;
+        padding: 8px;
+        width: 40px;
+        border-radius: 50%;
+
+        .image {
+          width: 24px;
+          height: 24px;
+          opacity: .54;
+        }
+      }
+    }
+  }
+}
